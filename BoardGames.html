@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>board game</title>
+    <style>
+        body{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            display: block;
+            max-width: 1000px;
+            margin: 0 auto;
+            }
+
+        .framing{
+            box-shadow: 5px 5px 5px rgba(89,110,121,0.2);
+            border-radius: 25px;
+            width: 80%;
+            color: #596E79;
+            background: #F0ECE2;
+            padding: 30px;
+            margin: 30px auto 10px;
+        }
+
+        h1,
+        h2{
+        font-size: 29px;
+        margin: 10px auto;}
+
+        h2{margin-bottom: 30px;}
+           
+        p{
+            text-align: initial;}
+
+        button {
+            display: block;
+            line-height: 20px;
+            margin: 25px auto;
+            padding: 10px 15px;
+            
+            border: 2px solid #596E79;
+            border-radius: 25px;
+            background-color: #C7B198;
+            font-size: 20px;
+            font-weight: bold;
+            color: #596E79;
+
+            box-shadow: 3px 3px 3px rgba(89,110,121,0.3);
+            transition: 0.2s ease-in-out;}
+
+        button:hover{
+            background: #F0ECE2;
+            box-shadow: none;
+            cursor: pointer;}
+        
+        img {
+            display: block;
+            width: 90%;
+            max-width: 500px;
+            margin:30px auto;
+            padding: 5px;
+            border: 2px solid #596E79;
+            border-radius: 25px;}
+
+        a {color: #596E79}
+
+        .bye {
+            text-align: center;
+            margin:22px;
+            font-size: 12px;
+            opacity: 70%;}
+
+        </style>
+</head>
+<body>
+    <div class="framing">
+    <h1>Playing board game </h1>
+    <h2 id="button"><em>... as an adult!</em></h2>
+   
+<p>
+    No one is surprised by the sight of board game playing children.
+    But many people should rediscover this hobby later once more, as adults: <em>it is so much more, than rolling the dice and stepping forward! </em><p>
+<p>
+    Playing board games not only brings laughter and decreases stress: ist has countless advantages.
+    It is a hobby, that increases brain functions, such as memory, problem solving and decision making. 
+    It is a constanat rule learning.
+    It brings people closer and strengthens relationships.
+    It teaches how to set goas, build up strategies and be patient. How to win and lose.
+    Playing enhance creativity and self-confidence.
+    And what is more; it helps elderly people to keep their mind sharp and reduces the risk of Alzheimer's disease.</p>
+
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/011/001/original/bgg_rc_05.jpg?1624058248" alt="Robinson Crusoe">
+
+    <p> <b>
+    How to start with board games? </b>
+    If you live in a big city, you can probably find some board game group that you can join.
+    Many physikal tabletop game shops organize game nights, providing the chance to try games before buying them.
+    Recently, more and more cafes with boardgame corners are waiting for those, who want to play and have fun.
+</p>
+<a href="https://boardgamegeek.com/" target="_blank"></a>
+
+<p>If you got interested, explore the world of board games <a href="https://boardgamegeek.com/browse/boardgamecategory" target="blank">on BGG</a>!</p>
+
+<button>Sign up for a board game party!</button>
+<hr />
+<p class="bye">This page was built by Borbála Birgés</p>
+</div>
+
+<script>
+    function contactUs()
+    {let name=prompt("What is your first name?");
+    let email=prompt("What is your e-mail addresse?"); 
+    alert("Thank you, "+name+" for applying! We will e-mail you when and where you can join our next board game party! 🎯 In the meantime, play a lot!");
+    
+    let magicH2=document.querySelector("h2");
+    magicH2.innerHTML="with us 🏝";}
+
+    let applyButton=document.querySelector("button");
+    applyButton.addEventListener("click", contactUs);
+ 
+</script>
+</body>
+
+</html>
